@@ -136,7 +136,7 @@ def solve():
         elif pos == x-1:
             print("Chon Cont(C" + str(order[-1]+1) + ", C" + str(x+1) + ", C" + str(0) +") = " + str(cont))
         else:
-            print("Chon Cont(C" + str(pos + 1) + ", C" + str(x+1) + ", C" + str(pos + 2) +") = " + str(cont))
+            print("Chon Cont(C" + str(order[pos] + 1) + ", C" + str(x+1) + ", C" + str(order[pos+1] + 1) +") = " + str(cont))
         order = order[:pos+1] + [x] + order[pos+1:]
         print("Ma tran sau khi sap xep la:")
         printMatrix(mx_t,order)
